@@ -1,0 +1,144 @@
+ 
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tasarım Kodlama</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="modal-ac">
+        <button id="modal-ac">Ekle</button>
+    </div>
+    <div class="modal">
+            <form action="#">
+                <h3 id="modal-kapat">x</h3>
+                <label>Ürün</label>
+                <input type="text" id="urun">
+
+                <label>Marka</label>
+                <input type="text"  id="marka">
+
+                <label>Adet</label>
+                <input type="number"  id="adet">
+
+                <label>Türü</label>
+                <input type="text"  id="tur">
+
+                <label>Durumu</label>
+                <input type="text"  id="durum">
+
+                <label>Stok sayısı</label>
+                <input type="number"  id="stok">
+                
+                <button id="form-buton">Denemeyi başlat</button>
+            </form>
+        </div>
+    
+        <div>
+            <table id="liste">
+                <tr>
+                    <th>Ürün</th>
+                    <th>Marka</th>
+                    <th>Adet</th>
+                    <th>Türü</th>
+                    <th>Durumu</th>
+                    <th>Stok sayısı</th>
+                    <th>Seçenekler</th>
+                </tr>
+            </table>
+        </div>
+    
+    
+   <script src="script.js"></script> 
+<!-- <script >
+    const modalBtn = document.getElementById("modal-ac");
+const modal = document.querySelector(".modal");
+const modalKapat = document.getElementById("modal-kapat");
+const urun = document.getElementById("urun");
+const marka = document.getElementById("marka");
+const adet = document.getElementById("adet");
+const tur = document.getElementById("tur");
+const durum = document.getElementById("durum");
+const stok= document.getElementById("stok");
+const ekle = document.getElementById("form-buton");
+const liste=document.querySelector("#liste");
+
+modalBtn.addEventListener("click", () =>{
+    modal.style.display="flex";
+    });
+
+
+modalKapat.addEventListener("click", () =>{
+modal.style.display="none";
+});
+
+ekle.addEventListener ('click', function(){
+
+    let turun=document.createElement("td");
+    let tmarka=document.createElement("td");
+    let tadet=document.createElement("td");
+    let ttur=document.createElement("td");
+    let tdurum=document.createElement("td");
+    let tstok=document.createElement("td");
+    let buttons = document.createElement("td");
+    
+
+
+     turun.textContent=urun.value;//textboxtan değeri okuyup aktarıyoruz.
+     tmarka.textContent = marka.value;
+     tadet.textContent=adet.value;
+     ttur.textContent=tur.value;
+     tdurum.textContent=durum.value;
+     tstok.textContent=stok.value;
+    
+    
+
+     //tr elementi oluşturuyoruz
+  let tr=document.createElement("tr");
+
+
+  //tdleri tr içine ekliyoruz
+  tr.appendChild(turun);
+  tr.appendChild(tmarka);
+  tr.appendChild(tadet);
+  tr.appendChild(ttur);
+  tr.appendChild(tdurum);
+  tr.appendChild(tstok);
+ 
+
+  //tr elementi oluşturuyoruz
+  
+
+
+// Create delete and update buttons
+const silBtn = document.createElement('button');
+silBtn.innerHTML = '<i class="fa-solid fa-trash"></i>';
+tr.appendChild(silBtn);
+
+const güncelleBtn = document.createElement('button');
+güncelleBtn.innerHTML = '<i class="fa-solid fa-pen-to-square"></i>';
+tr.appendChild(güncelleBtn);
+
+
+  
+
+
+
+  //tr elementini liste (tablo) içine ekliyoruz
+  liste.appendChild(tr);
+ 
+}
+ 
+
+  
+
+ekle.addEventListener("click", () =>{
+  modal.style.display="none";
+  });
+</script> -->
+</body>
+</html>

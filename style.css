@@ -1,0 +1,107 @@
+
+  #sayfa{
+    width: 500px;
+    margin:auto;
+    background: #ffeaa7;
+    padding:20px;
+  }
+
+  td,th{
+    border:1px solid white;
+    border-spacing: 0px;
+    margin: 0px;
+  }
+  table{
+      background: #0984e3;
+      margin:5px;
+      width: 95%;
+      color:#fff;
+    }
+
+.modal-ac{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100px;
+    width: 100%;
+}
+#modal-ac{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50px ;
+    width: 100px;
+}
+  .modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.550);
+}
+/*form yapisi için */ 
+.modal form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: blue;
+    border-radius: 1.5rem;
+    min-width: 50%;
+    height: 700px;
+    font-size: 1.2rem;
+}
+
+/* formu kapatma*/
+#modal-kapat{
+    position: absolute;
+    right:-0rem;
+    top:-1.4rem;
+    background:grey;
+    padding:.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: normal;
+}
+#modal-kapat:hover{
+    background: rgb(62, 61, 61);
+}
+    /*form içindeki inputlar için*/
+
+.modal form input{
+    margin: 0.5rem 0;
+    padding: .7rem;
+font-size: 1.1rem;
+outline: none;
+}
+#form-buton{
+    background-color: brown;
+    border-radius: 1.5rem;
+    color: aliceblue;
+    padding: .5rem;
+    font-size: 1.2rem;
+    border-style: none;
+    margin: .5rem;
+    cursor: pointer;
+}
+#form-buton:hover{
+    background-color: rgb(209, 57, 57);
+    
+}
+.fa-solid {
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    color: aliceblue;
+}
+
